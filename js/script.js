@@ -56,12 +56,12 @@ btnHold.addEventListener('click', function () {
   // 1. Add current score to active player's score
   scores[activePlayer] += currentScore;
 
-  document.getElementById(`current-${activePlayer}`).textContent =
+  document.getElementById(`score--${activePlayer}`).textContent =
     scores[activePlayer];
 
   // 2. Check if player's score is >= 100
 
   // 3. Switch to next player
-  document.getElementById(`score--${activePlayer}`).textContent = 0;
+
   switchPlayer();
 });
