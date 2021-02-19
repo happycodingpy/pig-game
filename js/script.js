@@ -62,6 +62,6 @@ btnHold.addEventListener('click', function () {
   // 2. Check if player's score is >= 100
 
   // 3. Switch to next player
-  document.getElementById(`current--${activePlayer}`).textContent = 0;
+  document.getElementById(`score--${activePlayer}`).textContent = 0;
   switchPlayer();
 });
